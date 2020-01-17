@@ -84,6 +84,15 @@ header a{
     color: black;
 }
 
+header a:hover{
+	animation: flash 1s infinite;
+}
+
+@keyframes flash{
+	from {color: black;}
+	to {color: red;}
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -174,6 +183,18 @@ header a{
     border: 1px solid black;
 }
 
+/* ********** Stretch Goal - Animations ********** */
+.about-button:hover{
+	animation: color-change 3s infinite;
+}
+
+@keyframes color-change{
+	from {background-color: black;
+	color: white;}
+	to {background-color: dimgray;
+	color: black;}
+}
+
 
 /* ***** Ends About Styling - Middle Section ***** */
 
@@ -219,4 +240,66 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* ********** Stretch Goal - Contact Page Styling ********** */
+
+.contacts-container{
+    width: 800px;
+    text-align: center;
+    margin: 5% auto 0 auto;
+}
+
+.contacts-text{
+    height: 200px;
+    margin: auto 0;
+}
+.contacts-container h1{
+    font-size: 60px;
+}
+
+.contacts-container h2{
+    font-size: 40px;
+}
+
+.contacts-container label{
+    width: 20%;
+    display: inline-block;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    vertical-align: top;
+    text-align: left;
+
+}
+
+.contacts-container input{
+    width: 70%;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+textarea{
+    width: 70%;
+    height: 100px;
+    display: inline-block;
+
+}
+
+.contacts-container button{
+    margin: 5% auto;
+    padding: 1% 5%;
+}
+
+/* ********** Stretch Goal - Media Query - Contact Page Styling ********** */
+
+@media screen and (max-width:800px){
+    .contacts-container form label{
+        width: 100%;
+        margin: 5% auto 1% auto;
+        
+    }
+
+    .contacts-container form input, textarea{
+        width: 100%;
+    }
 }
