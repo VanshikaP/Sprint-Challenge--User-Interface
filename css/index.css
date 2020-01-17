@@ -101,12 +101,14 @@ header a{
     border-bottom: 1px dashed black;
 }
 
+/* ***** About Styling - Top Section ***** */
 .top-content .about-top-text{
     width: 100%;
     padding: 0 2%;
     padding-bottom: 20px;
 }
 
+/* ***** Ends About Styling - Top Section ***** */
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -141,6 +143,7 @@ header a{
     justify-content: center;
 }
 
+/* ***** About Styling - Middle Section ***** */
 .about-middle-content {
     margin-bottom: 20px;
     padding: 0 2%;
@@ -172,6 +175,7 @@ header a{
 }
 
 
+/* ***** Ends About Styling - Middle Section ***** */
 
 .bottom-content {
     display: flex;
@@ -187,12 +191,17 @@ header a{
     padding-right: 0;
 }
 
+
+/* ***** About Styling - Bottom Section ***** */
+
 .about-bottom-content{
     padding: 0 2%;
     margin-bottom: 5%;
 
 }
 
+
+/* ***** Ends About Styling - Bottom Section ***** */
 footer {
     width: 100%;
     background: black;
